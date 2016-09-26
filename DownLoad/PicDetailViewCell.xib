@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailcell" rowHeight="300" id="KGk-i7-Jjw" customClass="PicDetailViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tmz-Ic-M4a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o2J-f9-Mar">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="o2J-f9-Mar" secondAttribute="bottom" id="MCO-gj-KIT"/>
+                            <constraint firstAttribute="trailing" secondItem="o2J-f9-Mar" secondAttribute="trailing" id="RFo-qX-wml"/>
+                            <constraint firstItem="o2J-f9-Mar" firstAttribute="top" secondItem="Tmz-Ic-M4a" secondAttribute="top" id="e75-tU-75U"/>
+                            <constraint firstItem="o2J-f9-Mar" firstAttribute="leading" secondItem="Tmz-Ic-M4a" secondAttribute="leading" id="r2m-bb-CNh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tmz-Ic-M4a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zub-PR-PEl"/>
+                    <constraint firstItem="Tmz-Ic-M4a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jdE-fW-SbZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Tmz-Ic-M4a" secondAttribute="bottom" id="lkZ-vL-9GT"/>
+                    <constraint firstAttribute="trailing" secondItem="Tmz-Ic-M4a" secondAttribute="trailing" id="vAE-QM-Gf1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="o2J-f9-Mar" id="BIM-7N-jnq"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="358"/>
+        </tableViewCell>
+    </objects>
+</document>
